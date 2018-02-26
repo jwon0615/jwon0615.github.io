@@ -143,14 +143,14 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -219,10 +219,14 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/2018/02/26/test/">
+                     <a href="/2017/03/18/hexo-theme-beantech/">
                         <h2 class="post-title">
-                            test
+                            [Hexo] Theme BeanTech
                         </h2>
+                        
+                            <h3 class="post-subtitle">
+                                This is hexo theme Demo.
+                            </h3>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -234,14 +238,10 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/2017/03/18/hexo-theme-beantech/">
+                     <a href="/2018/02/26/test/">
                         <h2 class="post-title">
-                            [Hexo] Theme BeanTech
+                            test
                         </h2>
-                        
-                            <h3 class="post-subtitle">
-                                This is hexo theme Demo.
-                            </h3>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -462,7 +462,24 @@
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 
 </html>
